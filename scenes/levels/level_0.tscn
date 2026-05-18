@@ -15,5 +15,5 @@ tile_set = ExtResource("1_nsrm0")
 [node name="Background" type="TileMapLayer" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("2_x42e6")]
-position = Vector2(-168, 7)
+position = Vector2(-163, 7)
 scale = Vector2(1.1, 1.1)
