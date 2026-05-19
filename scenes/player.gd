@@ -8,8 +8,10 @@ var _alive: bool = true
 
 @export var animation: AnimatedSprite2D
 @export var area_2d: Area2D
+@export var EnDoorPosition: Node2D
 
 func _ready():
+	position = EnDoorPosition.position
 	add_to_group("characters")
 	area_2d.body_entered.connect(_on_area_2d_body_entered)
 
