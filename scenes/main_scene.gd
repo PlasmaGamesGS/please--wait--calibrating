@@ -29,3 +29,7 @@ func _delete_level():
 func _restart_level():
 	_delete_level()
 	_create_level.call_deferred(_current_level)
+
+func next_level():
+	_current_level += 1
+	_restart_level()
