@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://vcr0q0taymbt"]
 
-[ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset2.png" id="1_syxuu"]
+[ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset.png" id="1_syxuu"]
 [ext_resource type="Script" uid="uid://dley4c56s777v" path="res://scenes/exit_door.gd" id="1_yk4m6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hy0h8"]
