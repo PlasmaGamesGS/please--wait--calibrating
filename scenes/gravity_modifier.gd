@@ -8,3 +8,4 @@ func _ready() -> void:
 func _mod_gravity(body):
 	if body.is_in_group("characters"):
 		body._mod_gravity()
+		queue_free()

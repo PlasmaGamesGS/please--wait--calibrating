@@ -32,4 +32,4 @@ position = Vector2(-1, 220)
 EnDoorPosition = NodePath("../EntranceDoor")
 
 [node name="GravityModifier" parent="." instance=ExtResource("6_sk5k4")]
-position = Vector2(-34, 57)
+position = Vector2(-97, 32)
