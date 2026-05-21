@@ -1,0 +1,10 @@
+extends Node2D
+
+@export var area_2d: Area2D
+
+func _ready() -> void:
+	area_2d.body_entered.connect(_fake_exit)
+
+
+func _fake_exit(_body: Node2D) -> void:
+	visible = false
