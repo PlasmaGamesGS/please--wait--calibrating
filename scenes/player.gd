@@ -64,8 +64,8 @@ func _damaged(_body: Node2D) -> void:
 func _mod_gravity():
 	for i in 2:
 		animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
-		await get_tree().create_timer(0.25).timeout
+		await get_tree().create_timer(0.05).timeout
 		animation.modulate = self.modulate
-		await get_tree().create_timer(0.25).timeout
+		await get_tree().create_timer(0.05).timeout
 	_alt_gravity = true
 	scale.y = - scale.y
