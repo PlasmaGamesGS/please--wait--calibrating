@@ -18,10 +18,10 @@ tile_set = ExtResource("1_q4rct")
 [node name="Border" parent="." instance=ExtResource("2_x5c7h")]
 
 [node name="ExitDoor" parent="." instance=ExtResource("3_0kg58")]
-position = Vector2(24, -2)
+position = Vector2(24, 80)
 
 [node name="EntranceDoor" parent="." instance=ExtResource("4_jbghe")]
-position = Vector2(-30, -1)
+position = Vector2(-24, 80)
 
 [node name="Player" parent="." node_paths=PackedStringArray("EnDoorPosition") instance=ExtResource("5_42lj3")]
 position = Vector2(-1, 220)
