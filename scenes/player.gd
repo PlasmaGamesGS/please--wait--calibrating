@@ -97,3 +97,5 @@ func _mod_size():
 		animation.modulate = self.modulate
 		await get_tree().create_timer(0.05).timeout
 	_alt_size = true
+	scale = get_scale() * 3
+	

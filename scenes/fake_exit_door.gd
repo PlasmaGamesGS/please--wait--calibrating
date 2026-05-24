@@ -8,9 +8,9 @@ func _ready() -> void:
 
 #IDFK DUDE
 func _fake_exit(_body: Node2D) -> void:
-	visible = false
-	get_parent().get_parent().get_parent().childs := _instantiated_level.get_children()
+	#visible = false
+	#get_parent().get_parent().get_parent().childs := _instantiated_level.get_children()
 	for i in childs.size():
 		if childs[i].is_in_group("characters"):
-			childs[i].player_died.connect(_restart_level)
+			#childs[i].player_died.connect(_restart_level)
 			break

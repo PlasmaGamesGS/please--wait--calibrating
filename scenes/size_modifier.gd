@@ -5,7 +5,7 @@ extends Node2D
 func _ready() -> void:
 	area_2d.body_entered.connect(_mod_size)
 	
-func _mod_gravity(body):
+func _mod_size(body):
 	if body.is_in_group("characters"):
 		body._mod_size()
 		queue_free()
