@@ -5,10 +5,11 @@
 [ext_resource type="TileSet" uid="uid://bb21qgbki857y" path="res://assets/tile_sets/alphatileset.tres" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkt6c"]
-size = Vector2(13.380953, 30.612244)
+size = Vector2(11.476191, 30.612244)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
-radius = 7.0
+radius = 6.0
+height = 28.0
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("animation", "area_2d")]
 collision_layer = 4
@@ -21,7 +22,7 @@ sprite_frames = ExtResource("2_g2els")
 animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.024999402, 3.1789145e-07)
+position = Vector2(0.024999402, 1.0000004)
 scale = Vector2(1.05, 0.98)
 shape = SubResource("RectangleShape2D_kkt6c")
 

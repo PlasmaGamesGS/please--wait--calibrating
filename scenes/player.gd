@@ -6,15 +6,18 @@ var _speed: float = 100.0
 var _jump_speed: float = -300.0
 var _alive: bool = true
 var gravity: Vector2
-var _alt_gravity: bool
+var alt_gravity: bool
 var _alt_size: bool
 var stair: bool
+var _size: Vector2 = Vector2(1, 1)
+var _new_size: int = 3
 
 @export var animation: AnimatedSprite2D
 @export var area_2d: Area2D
 @export var EnDoorPosition: Node2D
 
 func _ready():
+	scale = _size
 	position = EnDoorPosition.position
 	add_to_group("characters")
 	area_2d.body_entered.connect(_damaged)
@@ -38,17 +41,22 @@ func _physics_process(delta):
 	#gravedad
 	if stair == true:
 		gravity = Vector2(0, 0)
-	elif _alt_gravity:
+	elif alt_gravity:
 		gravity = -get_gravity()
 	else:
 		gravity = get_gravity()
 	velocity += gravity * delta
 	
+	if alt_gravity:
+		scale.y = - _size.y
+	else:
+		scale.y = _size.y
+	
 	#salto
 	if Input.is_action_pressed("jump"):
-		if _alt_gravity == false && is_on_floor():
+		if alt_gravity == false && is_on_floor():
 			velocity.y = _jump_speed
-		elif _alt_gravity && is_on_ceiling():
+		elif alt_gravity && is_on_ceiling():
 			velocity.y = -_jump_speed
 			
 	#escalar
@@ -73,22 +81,20 @@ func _damaged(_body: Node2D) -> void:
 
 
 func _mod_gravity():
-	if _alt_gravity == false:
+	if alt_gravity == false:
 		for i in 2:
 			animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
 			await get_tree().create_timer(0.05).timeout
 			animation.modulate = self.modulate
 			await get_tree().create_timer(0.05).timeout
-		_alt_gravity = true
-		scale.y = - scale.y
+		alt_gravity = true
 	else:
 		for i in 2:
 			animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
 			await get_tree().create_timer(0.05).timeout
 			animation.modulate = self.modulate
 			await get_tree().create_timer(0.05).timeout
-		_alt_gravity = false
-		scale.y = - scale.y
+		alt_gravity = false
 	
 func _mod_size():
 	for i in 2:
@@ -97,5 +103,5 @@ func _mod_size():
 		animation.modulate = self.modulate
 		await get_tree().create_timer(0.05).timeout
 	_alt_size = true
-	scale = get_scale() * 3
+	scale = _size * _new_size
 	
