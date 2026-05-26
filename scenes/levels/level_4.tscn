@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=4 uid="uid://dgdofrdro1kp2"]
 
 [ext_resource type="TileSet" uid="uid://bb21qgbki857y" path="res://assets/tile_sets/alphatileset.tres" id="1_q4rct"]
-[ext_resource type="PackedScene" uid="uid://bpomee7oqkmge" path="res://scenes/border.tscn" id="2_x5c7h"]
-[ext_resource type="PackedScene" uid="uid://vcr0q0taymbt" path="res://scenes/exit_door.tscn" id="3_0kg58"]
-[ext_resource type="PackedScene" uid="uid://cifs4vgj1m2u4" path="res://scenes/entrance_door.tscn" id="4_jbghe"]
-[ext_resource type="PackedScene" uid="uid://d1bern1ybm1xl" path="res://scenes/player.tscn" id="5_42lj3"]
+[ext_resource type="PackedScene" uid="uid://bpomee7oqkmge" path="res://scenes/propts/border.tscn" id="2_x5c7h"]
+[ext_resource type="PackedScene" uid="uid://vcr0q0taymbt" path="res://scenes/propts/exit_door.tscn" id="3_0kg58"]
+[ext_resource type="PackedScene" uid="uid://cifs4vgj1m2u4" path="res://scenes/propts/entrance_door.tscn" id="4_jbghe"]
+[ext_resource type="PackedScene" uid="uid://d1bern1ybm1xl" path="res://scenes/propts/player.tscn" id="5_42lj3"]
 [ext_resource type="Texture2D" uid="uid://nw6xusphensp" path="res://assets/imagenes/under_construction.jpg" id="6_rej77"]
 
 [node name="Level4" type="Node2D"]

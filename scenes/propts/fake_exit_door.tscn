@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://vcr0q0taymbt"]
+[gd_scene load_steps=4 format=3 uid="uid://d217k2hlly2g"]
 
-[ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset.png" id="1_syxuu"]
-[ext_resource type="Script" uid="uid://dley4c56s777v" path="res://scenes/exit_door.gd" id="1_yk4m6"]
+[ext_resource type="Script" uid="uid://46u70bv18yaa" path="res://scenes/propts/fake_exit_door.gd" id="1_0qo61"]
+[ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset.png" id="2_58o26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hy0h8"]
 size = Vector2(16, 32)
 
-[node name="ExitDoor" type="Node2D" node_paths=PackedStringArray("area_2d")]
-script = ExtResource("1_yk4m6")
+[node name="FakeExitDoor" type="Node2D" node_paths=PackedStringArray("area_2d")]
+script = ExtResource("1_0qo61")
 area_2d = NodePath("Area2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1, 2)
-texture = ExtResource("1_syxuu")
+texture = ExtResource("2_58o26")
 region_enabled = true
 region_rect = Rect2(16, 16, 16, 16)
 

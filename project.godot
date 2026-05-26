@@ -13,7 +13,7 @@ config_version=5
 config/name="Please, wait, calibrating..."
 run/main_scene="uid://cbwkgt6imvh8n"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://assets/imagenes/icon.svg"
 
 [input]
 
