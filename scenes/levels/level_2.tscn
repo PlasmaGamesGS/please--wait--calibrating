@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://dwe0312jcal4"]
+[gd_scene load_steps=11 format=4 uid="uid://dwe0312jcal4"]
 
 [ext_resource type="Script" uid="uid://6lf2b5igatfs" path="res://scenes/levels/level_2.gd" id="1_3p04p"]
 [ext_resource type="TileSet" uid="uid://bb21qgbki857y" path="res://assets/tile_sets/alphatileset.tres" id="1_l37oo"]
@@ -7,8 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://cifs4vgj1m2u4" path="res://scenes/entrance_door.tscn" id="4_8qukl"]
 [ext_resource type="PackedScene" uid="uid://d1bern1ybm1xl" path="res://scenes/player.tscn" id="5_3p04p"]
 [ext_resource type="PackedScene" uid="uid://bb2huh66qnaah" path="res://scenes/gravity_modifier.tscn" id="6_qpwj6"]
-[ext_resource type="PackedScene" uid="uid://ve3vcswa3abg" path="res://scenes/reverse_one_way_tile.tscn" id="7_ibugp"]
+[ext_resource type="PackedScene" uid="uid://ve3vcswa3abg" path="res://scenes/unidirectional_tile.tscn" id="7_ibugp"]
 [ext_resource type="PackedScene" uid="uid://bgnaqi5qoifvr" path="res://scenes/stair.tscn" id="8_8qukl"]
+[ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset.png" id="10_qsp8v"]
 
 [node name="Level2" type="Node2D" node_paths=PackedStringArray("_player")]
 script = ExtResource("1_3p04p")
@@ -25,6 +26,33 @@ tile_set = ExtResource("1_l37oo")
 [node name="Border" parent="." instance=ExtResource("2_qpwj6")]
 tile_map_data = PackedByteArray("AADy/wAAAAAAAAAAAAANAAAAAAAAAAAAAAAAAPj/AAAAAAAAAAAAAAcAAAAAAAAAAADy/wEAAAAAAAAAAADy/wIAAAAAAAAAAADy/wMAAAAAAAAAAADy/wQAAAAAAAAAAADy/wUAAAAAAAAAAADy/wYAAAAAAAAAAADy/wcAAAAAAAAAAADz/wcAAAAAAAAAAAD0/wcAAAAAAAAAAAD1/wcAAAAAAAAAAAD2/wcAAAAAAAAAAAD3/wcAAAAAAAAAAAD4/wcAAAAAAAAAAAD5/wcAAAAAAAAAAAD6/wcAAAAAAAAAAAD7/wcAAAAAAAAAAAD8/wcAAAAAAAAAAAD9/wcAAAAAAAAAAAD+/wcAAAAAAAAAAAD//wcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAANAAYAAAAAAAAAAAANAAUAAAAAAAAAAAANAAQAAAAAAAAAAAANAAMAAAAAAAAAAAANAAIAAAAAAAAAAAANAAEAAAAAAAAAAAANAP//AAAAAAAAAAANAP7/AAAAAAAAAAANAP3/AAAAAAAAAAANAPz/AAAAAAAAAAANAPv/AAAAAAAAAAANAPr/AAAAAAAAAAANAPn/AAAAAAAAAAANAPj/AAAAAAAAAAAMAPj/AAAAAAAAAAALAPj/AAAAAAAAAAAKAPj/AAAAAAAAAAAJAPj/AAAAAAAAAAAIAPj/AAAAAAAAAAAHAPj/AAAAAAAAAAAGAPj/AAAAAAAAAAAFAPj/AAAAAAAAAAAEAPj/AAAAAAAAAAADAPj/AAAAAAAAAAACAPj/AAAAAAAAAAABAPj/AAAAAAAAAAD///j/AAAAAAAAAAD+//j/AAAAAAAAAAD9//j/AAAAAAAAAAD8//j/AAAAAAAAAAD7//j/AAAAAAAAAAD6//j/AAAAAAAAAAD5//j/AAAAAAAAAAD4//j/AAAAAAAAAAD3//j/AAAAAAAAAAD2//j/AAAAAAAAAAD1//j/AAAAAAAAAAD0//j/AAAAAAAAAADz//j/AAAAAAAAAADy//j/AAAAAAAAAADy//n/AAAAAAAAAADy//r/AAAAAAAAAADy//v/AAAAAAAAAADy//z/AAAAAAAAAADy//3/AAAAAAAAAADy//7/AAAAAAAAAADy////AAAAAAAAAADz/wYAAAAAAAAAAADz/wUAAAAAAAAAAADz/wQAAAAAAAAAAADz/wMAAAAAAAAAAADz/wIAAAAAAAAAAADz/wEAAAAAAAAAAADz/wAAAAAAAAAAAADz////AAAAAAAAAADz//7/AAAAAAAAAADz//3/AAAAAAAAAADz//z/AAAAAAAAAADz//v/AAAAAAAAAADz//r/AAAAAAAAAADz//n/AAAAAAAAAAAMAPn/AAAAAAAAAAAMAPr/AAAAAAAAAAAMAPv/AAAAAAAAAAAMAPz/AAAAAAAAAAAMAP3/AAAAAAAAAAAMAP7/AAAAAAAAAAAMAP//AAAAAAAAAAAMAAAAAAAAAAAAAAAMAAEAAAAAAAAAAAAMAAIAAAAAAAAAAAAMAAMAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAADAAYAAAAAAAAAAAACAAYAAAAAAAAAAAABAAYAAAAAAAAAAAD8/wYAAAAAAAAAAAD5/wYAAAAAAAAAAAD4/wYAAAAAAAAAAAD3/wYAAAAAAAAAAAD2/wYAAAAAAAAAAAD1/wYAAAAAAAAAAAD0/wYAAAAAAAAAAADx/wgAAAAAAAAAAADy/wgAAAAAAAAAAADz/wgAAAAAAAAAAAD0/wgAAAAAAAAAAAD1/wgAAAAAAAAAAAD2/wgAAAAAAAAAAAD3/wgAAAAAAAAAAAD4/wgAAAAAAAAAAAD5/wgAAAAAAAAAAAD6/wgAAAAAAAAAAAD7/wgAAAAAAAAAAAD8/wgAAAAAAAAAAAD9/wgAAAAAAAAAAAD+/wgAAAAAAAAAAAD//wgAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAAAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAALAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAANAAgAAAAAAAAAAAAOAAgAAAAAAAAAAAAOAAcAAAAAAAAAAAAOAAYAAAAAAAAAAAAOAAUAAAAAAAAAAAAOAAQAAAAAAAAAAAAOAAMAAAAAAAAAAAAOAAIAAAAAAAAAAAAOAAEAAAAAAAAAAAAOAAAAAAAAAAAAAAAOAP//AAAAAAAAAAAOAP7/AAAAAAAAAAAOAP3/AAAAAAAAAAAOAPz/AAAAAAAAAAAOAPv/AAAAAAAAAAAOAPr/AAAAAAAAAAAOAPn/AAAAAAAAAAAOAPj/AAAAAAAAAAAOAPf/AAAAAAAAAAANAPf/AAAAAAAAAAAMAPf/AAAAAAAAAAALAPf/AAAAAAAAAAAKAPf/AAAAAAAAAAAJAPf/AAAAAAAAAAAIAPf/AAAAAAAAAAAHAPf/AAAAAAAAAAAGAPf/AAAAAAAAAAAFAPf/AAAAAAAAAAAEAPf/AAAAAAAAAAADAPf/AAAAAAAAAAACAPf/AAAAAAAAAAABAPf/AAAAAAAAAAAAAPf/AAAAAAAAAAD///f/AAAAAAAAAAD+//f/AAAAAAAAAAD9//f/AAAAAAAAAAD8//f/AAAAAAAAAAD7//f/AAAAAAAAAAD6//f/AAAAAAAAAAD5//f/AAAAAAAAAAD4//f/AAAAAAAAAAD3//f/AAAAAAAAAAD2//f/AAAAAAAAAAD1//f/AAAAAAAAAAD0//f/AAAAAAAAAADz//f/AAAAAAAAAADy//f/AAAAAAAAAADx//f/AAAAAAAAAADx//j/AAAAAAAAAADx//n/AAAAAAAAAADx//r/AAAAAAAAAADx//v/AAAAAAAAAADx//z/AAAAAAAAAADx//3/AAAAAAAAAADx//7/AAAAAAAAAADx////AAAAAAAAAADx/wAAAAAAAAAAAADx/wEAAAAAAAAAAADx/wIAAAAAAAAAAADx/wMAAAAAAAAAAADx/wQAAAAAAAAAAADx/wUAAAAAAAAAAADx/wYAAAAAAAAAAADx/wcAAAAAAAAAAAA=")
 
+[node name="Stair" parent="." instance=ExtResource("8_8qukl")]
+position = Vector2(-120, 72)
+
+[node name="CollisionShape2D" parent="Stair/Area2D" index="0"]
+position = Vector2(0, -7.589287)
+
+[node name="CollisionShape2D" parent="Stair" index="2"]
+position = Vector2(0, -39.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stair"]
+position = Vector2(0, 16)
+texture = ExtResource("10_qsp8v")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stair"]
+position = Vector2(0, -16)
+texture = ExtResource("10_qsp8v")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stair"]
+position = Vector2(0, -32)
+texture = ExtResource("10_qsp8v")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
+
 [node name="ExitDoor" parent="." instance=ExtResource("3_ibugp")]
 position = Vector2(-152, 16)
 
@@ -33,23 +61,24 @@ position = Vector2(167, -64)
 
 [node name="GravityModifier2" parent="." instance=ExtResource("6_qpwj6")]
 position = Vector2(80.00001, 62)
-scale = Vector2(3.3600025, 1.0000036)
+scale = Vector2(3.0400023, 1.0000036)
 
-[node name="ReverseOneWayTiles" type="Node" parent="."]
+[node name="UnidirectionalTiles" type="Node" parent="."]
 
-[node name="ReverseOneWayTile" parent="ReverseOneWayTiles" instance=ExtResource("7_ibugp")]
-position = Vector2(40, -32)
+[node name="UnidirectionalTile" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+position = Vector2(40, -36)
+player = NodePath("../Player")
 
-[node name="ReverseOneWayTile2" parent="ReverseOneWayTiles" instance=ExtResource("7_ibugp")]
-position = Vector2(56, -32)
+[node name="UnidirectionalTile2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+position = Vector2(56, -36)
+player = NodePath("../Player")
 
-[node name="ReverseOneWayTile3" parent="ReverseOneWayTiles" instance=ExtResource("7_ibugp")]
-position = Vector2(72, -32)
-
-[node name="Stair" parent="." instance=ExtResource("8_8qukl")]
-position = Vector2(-120, 64)
-scale = Vector2(1, 3.999032)
+[node name="UnidirectionalTile3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+position = Vector2(72, -36)
+player = NodePath("../Player")
 
 [node name="Player" parent="." node_paths=PackedStringArray("EnDoorPosition") instance=ExtResource("5_3p04p")]
 position = Vector2(-1, 220)
 EnDoorPosition = NodePath("../EntranceDoor")
+
+[editable path="Stair"]
