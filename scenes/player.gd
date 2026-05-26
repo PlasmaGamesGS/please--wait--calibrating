@@ -39,7 +39,7 @@ func _physics_process(delta):
 		velocity.x = 0
 
 	#gravedad
-	if stair == true:
+	if stair:
 		gravity = Vector2(0, 0)
 	elif alt_gravity:
 		gravity = -get_gravity()
@@ -54,16 +54,16 @@ func _physics_process(delta):
 	
 	#salto
 	if Input.is_action_pressed("jump"):
-		if alt_gravity == false && is_on_floor():
+		if alt_gravity == false && is_on_floor() && !stair:
 			velocity.y = _jump_speed
 		elif alt_gravity && is_on_ceiling():
 			velocity.y = -_jump_speed
 			
 	#escalar
 	if stair:
-		if Input.is_action_pressed("climb_up"):
+		if Input.is_action_pressed("up"):
 			position.y -= 2
-		elif Input.is_action_pressed("climb_down"):
+		elif Input.is_action_pressed("down"):
 			position.y += 2
 
 	move_and_slide()
@@ -81,27 +81,26 @@ func _damaged(_body: Node2D) -> void:
 
 
 func _mod_gravity():
-	if alt_gravity == false:
-		for i in 2:
-			animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
-			await get_tree().create_timer(0.05).timeout
-			animation.modulate = self.modulate
-			await get_tree().create_timer(0.05).timeout
+	for i in 2:
+		animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
+		await get_tree().create_timer(0.05).timeout
+		animation.modulate = self.modulate
+		await get_tree().create_timer(0.05).timeout
+	if !alt_gravity:
 		alt_gravity = true
 	else:
-		for i in 2:
-			animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
-			await get_tree().create_timer(0.05).timeout
-			animation.modulate = self.modulate
-			await get_tree().create_timer(0.05).timeout
 		alt_gravity = false
-	
+
+
 func _mod_size():
 	for i in 2:
+		if !_alt_size:
+			_alt_size = true
+			scale = _size * _new_size
+		else:
+			_alt_size = false
+			scale = _size
 		animation.modulate = Color(0.0, 1.0, 0.083, 1.0)
 		await get_tree().create_timer(0.05).timeout
 		animation.modulate = self.modulate
 		await get_tree().create_timer(0.05).timeout
-	_alt_size = true
-	scale = _size * _new_size
-	
