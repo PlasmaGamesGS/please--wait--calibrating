@@ -24,11 +24,11 @@ position = Vector2(104, 80)
 [node name="EntranceDoor" parent="." instance=ExtResource("4_jbghe")]
 position = Vector2(-104, 80)
 
-[node name="Player" parent="." node_paths=PackedStringArray("EnDoorPosition") instance=ExtResource("5_42lj3")]
-position = Vector2(-1, 220)
-EnDoorPosition = NodePath("../EntranceDoor")
-
 [node name="UnderConstruction" type="Sprite2D" parent="."]
 position = Vector2(0, -22.999998)
 scale = Vector2(0.41875678, 0.146)
 texture = ExtResource("6_rej77")
+
+[node name="Player" parent="." node_paths=PackedStringArray("EnDoorPosition") instance=ExtResource("5_42lj3")]
+position = Vector2(-1, 220)
+EnDoorPosition = NodePath("../EntranceDoor")

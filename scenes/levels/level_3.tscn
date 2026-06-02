@@ -79,33 +79,6 @@ scale = Vector2(0.9003934, 2.573608)
 script = ExtResource("5_n6eey")
 player = NodePath("../../Player")
 
-[node name="Stair" parent="." instance=ExtResource("2_ncs8t")]
-position = Vector2(136, 72)
-
-[node name="CollisionShape2D" parent="Stair/Area2D" index="0"]
-position = Vector2(0, -7.589287)
-
-[node name="CollisionShape2D" parent="Stair" index="2"]
-position = Vector2(0, -39.5)
-
-[node name="Sprite2D2" type="Sprite2D" parent="Stair"]
-position = Vector2(0, 16)
-texture = ExtResource("9_ncs8t")
-region_enabled = true
-region_rect = Rect2(64, 16, 16, 16)
-
-[node name="Sprite2D3" type="Sprite2D" parent="Stair"]
-position = Vector2(0, -16)
-texture = ExtResource("9_ncs8t")
-region_enabled = true
-region_rect = Rect2(64, 16, 16, 16)
-
-[node name="Sprite2D4" type="Sprite2D" parent="Stair"]
-position = Vector2(0, -32)
-texture = ExtResource("9_ncs8t")
-region_enabled = true
-region_rect = Rect2(64, 16, 16, 16)
-
 [node name="ExitDoor" parent="." instance=ExtResource("4_4ukb0")]
 visible = false
 position = Vector2(184, 80)
@@ -116,6 +89,30 @@ position = Vector2(168, 80)
 [node name="FakeExitDoor" parent="." node_paths=PackedStringArray("exit_door") instance=ExtResource("7_imkom")]
 position = Vector2(168, -80)
 exit_door = NodePath("../ExitDoor")
+
+[node name="Stair" parent="." instance=ExtResource("2_ncs8t")]
+position = Vector2(136, 40)
+
+[node name="CollisionShape2D" parent="Stair/Area2D" index="0"]
+position = Vector2(0, 20.982143)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stair"]
+position = Vector2(0, 16)
+texture = ExtResource("9_ncs8t")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stair"]
+position = Vector2(0, 32)
+texture = ExtResource("9_ncs8t")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stair"]
+position = Vector2(0, 48)
+texture = ExtResource("9_ncs8t")
+region_enabled = true
+region_rect = Rect2(64, 16, 16, 16)
 
 [node name="Player" parent="." node_paths=PackedStringArray("EnDoorPosition") instance=ExtResource("6_nurbu")]
 position = Vector2(-1, 220)

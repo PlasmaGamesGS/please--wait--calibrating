@@ -27,14 +27,22 @@ func _physics_process(delta):
 	if !_alive:
 		return
 	
+	if velocity == Vector2(0, 0):
+		animation.play("idle")
+	
 	#movimiento horizontal
 	if Input.is_action_pressed("right"):
 		animation.flip_h = false
 		velocity.x = _speed
+		if velocity.y == 0:
+			animation.play("run")
 
 	elif Input.is_action_pressed("left"):
 		animation.flip_h = true
 		velocity.x = -_speed
+		if velocity.y == 0:
+			animation.play("run")
+		
 	else:
 		velocity.x = 0
 
@@ -55,10 +63,13 @@ func _physics_process(delta):
 	#salto
 	if Input.is_action_pressed("jump"):
 		if alt_gravity == false && is_on_floor() && !stair:
+			animation.play("jump")
 			velocity.y = _jump_speed
-		elif alt_gravity && is_on_ceiling():
-			velocity.y = -_jump_speed
 			
+		elif alt_gravity && is_on_ceiling():
+			animation.play("jump")
+			velocity.y = -_jump_speed
+
 	#escalar
 	if stair:
 		if Input.is_action_pressed("up"):

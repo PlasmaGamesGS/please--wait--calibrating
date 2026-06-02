@@ -7,7 +7,7 @@
 size = Vector2(16, 58.03572)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhnnb"]
-size = Vector2(16, 1)
+size = Vector2(16, 8)
 
 [node name="Stair" type="StaticBody2D" node_paths=PackedStringArray("area_2d")]
 script = ExtResource("1_t3muf")
@@ -24,10 +24,10 @@ collision_layer = 8
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -0.44642854)
+position = Vector2(0, -0.44642884)
 shape = SubResource("RectangleShape2D_t3muf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -7.5)
+position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_mhnnb")
 one_way_collision = true
