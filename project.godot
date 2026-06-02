@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Please, wait, calibrating..."
-run/main_scene="uid://cbwkgt6imvh8n"
+run/main_scene="uid://c41lenir6xtoi"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://assets/imagenes/icon.svg"
+config/icon="res://assets/images/icon.svg"
+
+[autoload]
+
+GlobalController="*res://global_scripts/global_controller.gd"
 
 [input]
 

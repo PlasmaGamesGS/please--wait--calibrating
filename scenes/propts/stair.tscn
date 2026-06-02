@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bg83yav8gkuj0" path="res://assets/tile_sets/alpha_tileset.png" id="1_2grh0"]
 [ext_resource type="Script" uid="uid://bub1fdr8b8x8" path="res://scenes/propts/stair.gd" id="1_t3muf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3muf"]
-size = Vector2(16, 58.03572)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mavp"]
+size = Vector2(16, 56.250004)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhnnb"]
 size = Vector2(16, 8)
@@ -24,8 +24,7 @@ collision_layer = 8
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -0.44642884)
-shape = SubResource("RectangleShape2D_t3muf")
+shape = SubResource("RectangleShape2D_7mavp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
