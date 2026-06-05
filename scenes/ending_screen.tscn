@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dc78pecyhm42g"]
+[gd_scene load_steps=12 format=3 uid="uid://dc78pecyhm42g"]
 
 [ext_resource type="Theme" uid="uid://d3qso5yw6drip" path="res://themes/title_screen_theme.tres" id="1_wj6lj"]
 [ext_resource type="StyleBox" uid="uid://ysilah71lpef" path="res://themes/title_screen_button_normal.tres" id="2_nm5sb"]
@@ -6,8 +6,23 @@
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://themes/title_screen_button_hover.tres" id="4_o2gku"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_aprg5"]
 [ext_resource type="Script" uid="uid://x38squn68n67" path="res://scenes/title_screen_button.gd" id="6_qpc4k"]
-[ext_resource type="PackedScene" uid="uid://c7demcc55e7k" path="res://scenes/levels/level_0.tscn" id="7_wj6lj"]
+[ext_resource type="Script" uid="uid://mpvjkup5fwmo" path="res://scenes/play.gd" id="7_5nntc"]
+[ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/main_scene.tscn" id="7_wj6lj"]
 [ext_resource type="FontFile" uid="uid://bgb2xaf423b4u" path="res://fonts/retro_computer/retro_computer_personal_use.ttf" id="8_wj6lj"]
+[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="9_o2gku"]
+
+[sub_resource type="PackedScene" id="PackedScene_aprg5"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("TitleScreen", "layout_mode", "anchors_preset", "anchor_right", "anchor_bottom", "grow_horizontal", "grow_vertical", "Control", "ColorRect", "offset_right", "offset_bottom", "scale", "color", "VBoxContainer", "anchor_top", "offset_left", "offset_top", "theme_override_constants/separation", "Play", "theme", "theme_override_styles/normal", "theme_override_styles/pressed", "theme_override_styles/hover", "theme_override_styles/focus", "text", "script", "main_scene", "Button", "Load", "visible", "Exit", "autowrap_trim_flags", "VBoxContainer2", "anchor_left", "Label", "horizontal_alignment", "vertical_alignment", "Label2", "theme_override_font_sizes/font_size"),
+"node_count": 9,
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 7, 0, -1, 6, 1, 0, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 0, 0, 0, 8, 8, -1, 5, 1, 4, 9, 2, 10, 2, 11, 5, 12, 6, 0, 0, 0, 13, 13, -1, 10, 1, 7, 2, 8, 14, 9, 4, 9, 15, 10, 16, 11, 9, 12, 10, 13, 6, 3, 17, 14, 0, 2, 0, 27, 18, -1, 9, 1, 3, 19, 15, 20, 16, 21, 17, 22, 18, 23, 19, 24, 20, 25, 21, 26, 22, 0, 2, 0, 27, 28, -1, 8, 29, 23, 1, 3, 19, 15, 20, 16, 21, 17, 22, 18, 23, 19, 24, 24, 0, 2, 0, 27, 30, -1, 9, 1, 3, 19, 15, 20, 16, 21, 17, 22, 18, 23, 19, 24, 25, 31, 26, 25, 27, 0, 0, 0, 13, 32, -1, 9, 1, 7, 2, 7, 33, 2, 3, 2, 15, 28, 16, 10, 9, 29, 10, 30, 5, 4, 0, 6, 0, 34, 34, -1, 5, 1, 3, 19, 15, 24, 31, 35, 3, 36, 3, 0, 6, 0, 34, 37, -1, 5, 1, 3, 19, 15, 38, 32, 24, 33, 35, 3, 0),
+"variants": [3, 15, 1.0, 2, 0, Vector2(1152, 648), Color(0, 1, 0.6484375, 1), 1, 4, 0.5, 30.0, -144.0, 219.0, 208.0, 20, ExtResource("1_wj6lj"), ExtResource("2_nm5sb"), ExtResource("3_5nntc"), ExtResource("4_o2gku"), ExtResource("5_aprg5"), "Play", ExtResource("7_5nntc"), ExtResource("7_wj6lj"), false, "Load", "Exit", 192, ExtResource("9_o2gku"), -992.0, -7.0, 118.0, "Please, wait,", 180, "Calibrating..."],
+"version": 3
+}
 
 [node name="EndingScreen" type="Control"]
 layout_mode = 3
@@ -49,7 +64,7 @@ theme_override_styles/focus = ExtResource("5_aprg5")
 text = "Title Screen
 "
 script = ExtResource("6_qpc4k")
-title_screen = ExtResource("7_wj6lj")
+title_screen = SubResource("PackedScene_aprg5")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 1

@@ -9,5 +9,6 @@ func _ready() -> void:
 
 
 func _replay():
+	title_screen.can_instantiate()
 	title_screen.instantiate()
 	get_tree().change_scene_to_packed(title_screen)
