@@ -6,7 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://themes/title_screen_button_hover.tres" id="4_o2gku"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_aprg5"]
 [ext_resource type="Script" uid="uid://x38squn68n67" path="res://scenes/title_screen_button.gd" id="6_qpc4k"]
-[ext_resource type="PackedScene" uid="uid://c41lenir6xtoi" path="res://scenes/title_screen.tscn" id="7_wj6lj"]
+[ext_resource type="PackedScene" uid="uid://c7demcc55e7k" path="res://scenes/levels/level_0.tscn" id="7_wj6lj"]
 [ext_resource type="FontFile" uid="uid://bgb2xaf423b4u" path="res://fonts/retro_computer/retro_computer_personal_use.ttf" id="8_wj6lj"]
 
 [node name="EndingScreen" type="Control"]

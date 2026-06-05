@@ -6,7 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://dd1mw22e4yjl3" path="res://themes/title_screen_button_pressed.tres" id="4_mgrm8"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_dc4i4"]
 [ext_resource type="Script" uid="uid://mpvjkup5fwmo" path="res://scenes/play.gd" id="6_3yumr"]
-[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit.gd" id="6_e54dn"]
+[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="6_e54dn"]
 [ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/main_scene.tscn" id="7_cs5ya"]
 
 [node name="TitleScreen" type="Control"]
