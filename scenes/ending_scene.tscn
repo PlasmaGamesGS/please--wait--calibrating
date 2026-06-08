@@ -5,7 +5,7 @@
 [ext_resource type="StyleBox" uid="uid://dd1mw22e4yjl3" path="res://themes/title_screen_button_pressed.tres" id="3_7678q"]
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://themes/title_screen_button_hover.tres" id="4_6x60d"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_segms"]
-[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit.gd" id="6_5cw1r"]
+[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="6_5cw1r"]
 [ext_resource type="FontFile" uid="uid://bgb2xaf423b4u" path="res://fonts/retro_computer/retro_computer_personal_use.ttf" id="7_mgabq"]
 
 [node name="EndingScene" type="Control"]
@@ -25,14 +25,17 @@ color = Color(0, 1, 0.6484375, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 500.0
-offset_top = 217.0
-offset_right = 689.0
-offset_bottom = 569.0
-grow_vertical = 2
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -94.5
+offset_top = -110.0
+offset_right = 94.5
+offset_bottom = 242.0
+grow_horizontal = 2
+grow_vertical = 0
 theme_override_constants/separation = 20
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
