@@ -22,7 +22,6 @@ tile_set = ExtResource("1_6761a")
 
 [node name="ExitDoor" parent="." instance=ExtResource("3_oc4kc")]
 position = Vector2(168, 80)
-scale = Vector2(-1, -1)
 
 [node name="EntranceDoor" parent="." instance=ExtResource("4_s8va5")]
 position = Vector2(-152, 80)

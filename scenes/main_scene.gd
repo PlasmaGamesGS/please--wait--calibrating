@@ -1,6 +1,5 @@
 extends Node2D
 
-
 @export var levels: Array[PackedScene]
 @export var _ending_scene: PackedScene
 @export var _intro: AudioStreamPlayer2D
@@ -12,16 +11,12 @@ var _instantiated_level: Node
 
 
 func _ready() -> void:
+	_intro.add_to_group("music")
+	_loop.add_to_group("music")
+	_under_construction.add_to_group("music")
 	_create_level(_current_level)
-	
-	#music
+
 	_intro.finished.connect(_loop.play)
-
-
-func _physics_process(_delta: float) -> void:
-	if _current_level == 4:
-		_loop.stop()
-		_under_construction.play()
 
 
 func _create_level(level_number: int):
@@ -49,3 +44,6 @@ func next_level():
 	else:
 		_current_level += 1
 		_restart_level()
+	if _current_level == 4:
+		_loop.stop()
+		_under_construction.play()

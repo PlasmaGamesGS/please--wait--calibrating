@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/main_intro.wav-3d1afb9c166f02216c6a04d4f104e6
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

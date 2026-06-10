@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://u37w84wfbmno"]
+[gd_scene load_steps=10 format=3 uid="uid://u37w84wfbmno"]
 
 [ext_resource type="Theme" uid="uid://d3qso5yw6drip" path="res://themes/title_screen_theme.tres" id="1_5cw1r"]
 [ext_resource type="StyleBox" uid="uid://ysilah71lpef" path="res://themes/title_screen_button_normal.tres" id="2_tnx00"]
@@ -7,6 +7,8 @@
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_segms"]
 [ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="6_5cw1r"]
 [ext_resource type="FontFile" uid="uid://bgb2xaf423b4u" path="res://fonts/retro_computer/retro_computer_personal_use.ttf" id="7_mgabq"]
+[ext_resource type="AudioStream" uid="uid://cqvnfpuyoj4i0" path="res://audio/music/ending_theme.mp3" id="8_7678q"]
+[ext_resource type="Script" uid="uid://b3hmr33bpfqsx" path="res://scenes/menu_themes.gd" id="9_6x60d"]
 
 [node name="EndingScene" type="Control"]
 layout_mode = 3
@@ -85,3 +87,9 @@ Thank you for playing our game, we really hope
 you enjoyed your experience. See you soon,
 -Plasma Games"
 horizontal_alignment = 1
+
+[node name="EndingTheme" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(93, 118)
+stream = ExtResource("8_7678q")
+pitch_scale = 0.8
+script = ExtResource("9_6x60d")

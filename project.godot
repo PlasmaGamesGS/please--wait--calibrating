@@ -10,10 +10,18 @@ config_version=5
 
 [application]
 
-config/name="Please, wait, calibrating..."
+config/name="Please, wait, Calibrating..."
+config/version="Alpha 0.0.1"
 run/main_scene="uid://vjd6xt1fpohd"
 config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://bgl3bllen7hod"
 config/icon="res://assets/images/icon.svg"
+boot_splash/minimum_display_time=3000
+
+[audio]
+
+buses/default_bus_layout="res://audio/default_bus_layout.tres"
 
 [autoload]
 

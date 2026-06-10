@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://vjd6xt1fpohd"]
+[gd_scene load_steps=11 format=3 uid="uid://vjd6xt1fpohd"]
 
 [ext_resource type="Theme" uid="uid://d3qso5yw6drip" path="res://themes/title_screen_theme.tres" id="1_7rdyk"]
 [ext_resource type="StyleBox" uid="uid://ysilah71lpef" path="res://themes/title_screen_button_normal.tres" id="2_ofksa"]
@@ -7,7 +7,9 @@
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_6ppm8"]
 [ext_resource type="Script" uid="uid://mpvjkup5fwmo" path="res://scenes/play.gd" id="6_bre4b"]
 [ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/main_scene.tscn" id="7_ur11i"]
-[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit.gd" id="8_u3gtk"]
+[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="8_u3gtk"]
+[ext_resource type="AudioStream" uid="uid://bm3lrkh7op6r5" path="res://audio/music/title_theme.mp3" id="9_1ot34"]
+[ext_resource type="Script" uid="uid://b3hmr33bpfqsx" path="res://scenes/menu_themes.gd" id="10_1ot34"]
 
 [node name="TitleScene" type="Control"]
 layout_mode = 3
@@ -82,3 +84,8 @@ theme = ExtResource("1_7rdyk")
 theme_override_font_sizes/font_size = 180
 text = "Calibrating..."
 horizontal_alignment = 2
+
+[node name="TitleTheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_1ot34")
+pitch_scale = 1.2
+script = ExtResource("10_1ot34")

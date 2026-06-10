@@ -27,17 +27,14 @@ zoom = Vector2(2.4, 2.25)
 process_mode = 3
 
 [node name="Intro" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
 stream = ExtResource("9_c1pb6")
 autoplay = true
 bus = &"Music"
 
 [node name="Loop" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
 stream = ExtResource("10_6wevv")
 bus = &"Music"
 parameters/looping = true
 
 [node name="UnderConstruction" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
 stream = ExtResource("11_e1cbu")
