@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bub1fdr8b8x8" path="res://scenes/propts/stair.gd" id="1_t3muf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mavp"]
-size = Vector2(16, 56.250004)
+size = Vector2(16, 58.035713)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhnnb"]
 size = Vector2(16, 8)
@@ -24,6 +24,7 @@ collision_layer = 8
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.4464283)
 shape = SubResource("RectangleShape2D_7mavp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

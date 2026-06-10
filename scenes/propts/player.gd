@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 signal player_died
 
-var _speed: float = 100.0
+var _speed: float = 100.0 
+
 var _jump_speed: float = -300.0
 var _alive: bool = true
 var gravity: Vector2
@@ -93,7 +94,7 @@ func _damaged(_body: Node2D) -> void:
 
 func _mod_gravity():
 	for i in 2:
-		animation.modulate = Color(1.0, 0.352, 0.0, 1.0)
+		animation.modulate = Color(1.0, 0.492, 0.0, 1.0)
 		await get_tree().create_timer(0.05).timeout
 		animation.modulate = self.modulate
 		await get_tree().create_timer(0.05).timeout
