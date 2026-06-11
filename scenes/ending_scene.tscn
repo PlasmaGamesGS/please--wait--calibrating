@@ -5,7 +5,7 @@
 [ext_resource type="StyleBox" uid="uid://dd1mw22e4yjl3" path="res://themes/title_screen_button_pressed.tres" id="3_7678q"]
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://themes/title_screen_button_hover.tres" id="4_6x60d"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://themes/title_screen_button_focus.tres" id="5_segms"]
-[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="6_5cw1r"]
+[ext_resource type="Script" uid="uid://da0mgfab70ah" path="res://scenes/quit.gd" id="6_7678q"]
 [ext_resource type="FontFile" uid="uid://bgb2xaf423b4u" path="res://fonts/retro_computer/retro_computer_personal_use.ttf" id="7_mgabq"]
 [ext_resource type="AudioStream" uid="uid://cqvnfpuyoj4i0" path="res://audio/music/ending_theme.mp3" id="8_7678q"]
 [ext_resource type="Script" uid="uid://b3hmr33bpfqsx" path="res://scenes/menu_themes.gd" id="9_6x60d"]
@@ -47,9 +47,10 @@ theme_override_styles/normal = ExtResource("2_tnx00")
 theme_override_styles/pressed = ExtResource("3_7678q")
 theme_override_styles/hover = ExtResource("4_6x60d")
 theme_override_styles/focus = ExtResource("5_segms")
-text = "Quit"
+text = "Quit
+"
 autowrap_trim_flags = 192
-script = ExtResource("6_5cw1r")
+script = ExtResource("6_7678q")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 1

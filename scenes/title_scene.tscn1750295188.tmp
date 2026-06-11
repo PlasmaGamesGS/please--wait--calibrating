@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://vjd6xt1fpohd"]
+[gd_scene load_steps=13 format=3 uid="uid://vjd6xt1fpohd"]
 
 [ext_resource type="Theme" uid="uid://d3qso5yw6drip" path="res://themes/title_screen_theme.tres" id="1_7rdyk"]
 [ext_resource type="StyleBox" uid="uid://ysilah71lpef" path="res://themes/title_screen_button_normal.tres" id="2_ofksa"]
@@ -8,8 +8,9 @@
 [ext_resource type="Script" uid="uid://mpvjkup5fwmo" path="res://scenes/play.gd" id="6_bre4b"]
 [ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/main_scene.tscn" id="7_ur11i"]
 [ext_resource type="Script" uid="uid://rkfuwdefuie3" path="res://scenes/options.gd" id="8_6ppm8"]
+[ext_resource type="Script" uid="uid://c5h21v08sqsn" path="res://scenes/exit_button.gd" id="8_u3gtk"]
 [ext_resource type="AudioStream" uid="uid://bm3lrkh7op6r5" path="res://audio/music/title_theme.mp3" id="9_1ot34"]
-[ext_resource type="Script" uid="uid://da0mgfab70ah" path="res://scenes/quit.gd" id="9_lqobm"]
+[ext_resource type="PackedScene" uid="uid://cihv27okb2r7g" path="res://scenes/options_scene.tscn" id="9_bre4b"]
 [ext_resource type="Script" uid="uid://b3hmr33bpfqsx" path="res://scenes/menu_themes.gd" id="10_1ot34"]
 
 [node name="TitleScene" type="Control"]
@@ -51,7 +52,6 @@ script = ExtResource("6_bre4b")
 main_scene = ExtResource("7_ur11i")
 
 [node name="Options" type="Button" parent="VBoxContainer"]
-visible = false
 layout_mode = 2
 theme = ExtResource("1_7rdyk")
 theme_override_styles/normal = ExtResource("2_ofksa")
@@ -60,6 +60,7 @@ theme_override_styles/hover = ExtResource("4_lqobm")
 theme_override_styles/focus = ExtResource("5_6ppm8")
 text = "Options"
 script = ExtResource("8_6ppm8")
+main_scene = ExtResource("9_bre4b")
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -70,7 +71,7 @@ theme_override_styles/hover = ExtResource("4_lqobm")
 theme_override_styles/focus = ExtResource("5_6ppm8")
 text = "Quit"
 autowrap_trim_flags = 192
-script = ExtResource("9_lqobm")
+script = ExtResource("8_u3gtk")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 1

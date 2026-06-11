@@ -1,10 +1,9 @@
 extends Button
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pressed.connect(_exit)
+	pressed.connect(_quit)
 
 
-func _exit():
+func _quit():
 	get_tree().quit()

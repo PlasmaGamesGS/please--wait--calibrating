@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8bc10"]
 size = Vector2(16, 8)
 
-[node name="OneWayTile" type="StaticBody2D" node_paths=PackedStringArray("collision")]
+[node name="UnidirectionalTile" type="StaticBody2D" node_paths=PackedStringArray("collision")]
 script = ExtResource("1_rlccd")
 collision = NodePath("CollisionShape2D")
 

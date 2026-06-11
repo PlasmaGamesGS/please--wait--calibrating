@@ -38,17 +38,17 @@ scale = Vector2(3.0400023, 1.0000036)
 
 [node name="UnidirectionalTiles" type="Node" parent="."]
 
-[node name="UnidirectionalTile" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+[node name="UnidirectionalTile" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
 position = Vector2(40, -36)
-player = NodePath("../Player")
+player = NodePath("../../Player")
 
-[node name="UnidirectionalTile2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+[node name="UnidirectionalTile2" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
 position = Vector2(56, -36)
-player = NodePath("../Player")
+player = NodePath("../../Player")
 
-[node name="UnidirectionalTile3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
+[node name="UnidirectionalTile3" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("7_ibugp")]
 position = Vector2(72, -36)
-player = NodePath("../Player")
+player = NodePath("../../Player")
 
 [node name="Stair" parent="." instance=ExtResource("8_8qukl")]
 position = Vector2(-120, 40)

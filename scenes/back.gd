@@ -1,10 +1,12 @@
 extends Button
 
+@export var title_scene: PackedScene
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pressed.connect(_exit)
+	pressed.connect(_back)
 
 
-func _exit():
-	get_tree().quit()
+func _back():
+	pass

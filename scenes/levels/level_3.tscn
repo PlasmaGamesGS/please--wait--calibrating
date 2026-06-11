@@ -31,31 +31,31 @@ tile_map_data = PackedByteArray("AADy/wAAAAAAAAAAAAANAAAAAAAAAAAAAADy/wEAAAAAAAA
 position = Vector2(104, -108)
 player = NodePath("../../Player")
 
-[node name="OneWayTile2" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile2" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(120, -108)
 player = NodePath("../../Player")
 
-[node name="OneWayTile3" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile3" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(136, -108)
 player = NodePath("../../Player")
 
-[node name="OneWayTile4" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile4" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(-120, -60)
 player = NodePath("../../Player")
 
-[node name="OneWayTile5" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile5" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(-104, -60)
 player = NodePath("../../Player")
 
-[node name="OneWayTile6" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile6" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(-88, -60)
 player = NodePath("../../Player")
 
-[node name="OneWayTile8" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile7" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(-168, 20)
 player = NodePath("../../Player")
 
-[node name="OneWayTile9" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
+[node name="UnidirectionalTile8" parent="UnidirectionalTiles" node_paths=PackedStringArray("player") instance=ExtResource("5_uj005")]
 position = Vector2(-8, 44)
 player = NodePath("../../Player")
 
