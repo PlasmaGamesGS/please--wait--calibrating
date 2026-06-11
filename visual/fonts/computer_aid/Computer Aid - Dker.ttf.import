@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c1asilhn0ii2d"
-path="res://.godot/imported/Computer Aid - Condensed - Dker.ttf-b164db9d9a8add8bc78be2c84bdd931a.fontdata"
+uid="uid://cxm4t5cmdnmy2"
+path="res://.godot/imported/Computer Aid - Dker.ttf-5b5a786e2b2fc8073f7cc5796301a6ed.fontdata"
 
 [deps]
 
-source_file="res://fonts/computer_aid/Computer Aid - Condensed - Dker.ttf"
-dest_files=["res://.godot/imported/Computer Aid - Condensed - Dker.ttf-b164db9d9a8add8bc78be2c84bdd931a.fontdata"]
+source_file="res://visual/fonts/computer_aid/Computer Aid - Dker.ttf"
+dest_files=["res://.godot/imported/Computer Aid - Dker.ttf-5b5a786e2b2fc8073f7cc5796301a6ed.fontdata"]
 
 [params]
 

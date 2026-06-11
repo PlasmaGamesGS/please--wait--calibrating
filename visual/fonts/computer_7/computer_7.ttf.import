@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bgb2xaf423b4u"
-path="res://.godot/imported/retro_computer_personal_use.ttf-2d8ca2e5c14beb8b3a04a84f212782dd.fontdata"
+uid="uid://bxevb61csv7tg"
+path="res://.godot/imported/computer_7.ttf-35f91ebf3e7a7c299a014bf6823f46f2.fontdata"
 
 [deps]
 
-source_file="res://fonts/retro_computer/retro_computer_personal_use.ttf"
-dest_files=["res://.godot/imported/retro_computer_personal_use.ttf-2d8ca2e5c14beb8b3a04a84f212782dd.fontdata"]
+source_file="res://visual/fonts/computer_7/computer_7.ttf"
+dest_files=["res://.godot/imported/computer_7.ttf-35f91ebf3e7a7c299a014bf6823f46f2.fontdata"]
 
 [params]
 

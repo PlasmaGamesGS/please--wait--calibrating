@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://rrtut3lp3ydg"
-path="res://.godot/imported/winbroken.ttf-1d1375dc4641817cdf1e2394517ec8d9.fontdata"
+uid="uid://daivbl6g3cvx4"
+path="res://.godot/imported/Computer Aid - Bold - Dker.ttf-52101c0461268746d10a26813297a19f.fontdata"
 
 [deps]
 
-source_file="res://fonts/windows_broken/winbroken.ttf"
-dest_files=["res://.godot/imported/winbroken.ttf-1d1375dc4641817cdf1e2394517ec8d9.fontdata"]
+source_file="res://visual/fonts/computer_aid/Computer Aid - Bold - Dker.ttf"
+dest_files=["res://.godot/imported/Computer Aid - Bold - Dker.ttf-52101c0461268746d10a26813297a19f.fontdata"]
 
 [params]
 

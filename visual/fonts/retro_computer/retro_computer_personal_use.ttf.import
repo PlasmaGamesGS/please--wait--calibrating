@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://j5c7en53gpyt"
-path="res://.godot/imported/Computer Aid - Light - Dker.ttf-b20151327f025ef8434fcbaa52c5c862.fontdata"
+uid="uid://bgb2xaf423b4u"
+path="res://.godot/imported/retro_computer_personal_use.ttf-0f54a2527ed201b33b1749f8cbba6731.fontdata"
 
 [deps]
 
-source_file="res://fonts/computer_aid/Computer Aid - Light - Dker.ttf"
-dest_files=["res://.godot/imported/Computer Aid - Light - Dker.ttf-b20151327f025ef8434fcbaa52c5c862.fontdata"]
+source_file="res://visual/fonts/retro_computer/retro_computer_personal_use.ttf"
+dest_files=["res://.godot/imported/retro_computer_personal_use.ttf-0f54a2527ed201b33b1749f8cbba6731.fontdata"]
 
 [params]
 

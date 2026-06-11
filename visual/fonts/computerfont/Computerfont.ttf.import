@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bwstdhnpr7i77"
-path="res://.godot/imported/Computerfont.ttf-8d1a1102dbab87001f39f7994c5bba00.fontdata"
+path="res://.godot/imported/Computerfont.ttf-4869a6af0e812ddb9a16778682f1bc2b.fontdata"
 
 [deps]
 
-source_file="res://fonts/computerfont/Computerfont.ttf"
-dest_files=["res://.godot/imported/Computerfont.ttf-8d1a1102dbab87001f39f7994c5bba00.fontdata"]
+source_file="res://visual/fonts/computerfont/Computerfont.ttf"
+dest_files=["res://.godot/imported/Computerfont.ttf-4869a6af0e812ddb9a16778682f1bc2b.fontdata"]
 
 [params]
 
