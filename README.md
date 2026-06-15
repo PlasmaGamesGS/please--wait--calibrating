@@ -2,7 +2,7 @@ Hello!, this is PlasmaGames
 Thanks for downloading our game, we are really glad you did.
 
 Currently, Please, wait, Calibrating... is in a really early Alpha state and lots of more content will come in the future.
-If you want to know more about the proyect, us, or anything else, you should check out Itch.io page, were you'll find all of our platforms (GitHub, YouTube...) and also more of our proyects, as well as news and updates for our existing content, or future ones! (ahem, you can even donate if you want...)
+If you want to know more about the proyect, us, or anything else, you should check out [Itch.io page](https://plasmagamez.itch.io/please-wait-calibrating), were you'll find all of our platforms (GitHub, YouTube...) and also more of our proyects, as well as news and updates for our existing content, or future ones! (ahem, you can even donate if you want...)
 
 We also want to thank Schematist for their license-free music used in the proyect (Adventures in Mana). All of the required information is down below.
 
