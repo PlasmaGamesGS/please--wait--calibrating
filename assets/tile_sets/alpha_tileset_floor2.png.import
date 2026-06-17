@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hywxq5nwvbsk"
-path="res://.godot/imported/Lvl3.png-49908c6bfa6442774248b09c7a46e2d4.ctex"
+uid="uid://csi68473q7kv8"
+path="res://.godot/imported/alpha_tileset_floor2.png-a13eb8a8679ccc34f8415752db70e870.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/brand/Screenshots/Lvl3.png"
-dest_files=["res://.godot/imported/Lvl3.png-49908c6bfa6442774248b09c7a46e2d4.ctex"]
+source_file="res://assets/tile_sets/alpha_tileset_floor2.png"
+dest_files=["res://.godot/imported/alpha_tileset_floor2.png-a13eb8a8679ccc34f8415752db70e870.ctex"]
 
 [params]
 

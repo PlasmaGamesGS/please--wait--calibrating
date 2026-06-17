@@ -41,9 +41,10 @@ func _restart_level():
 func next_level():
 	if _current_level == 4:
 		get_tree().change_scene_to_packed.call_deferred(_ending_scene)
+		_loop.stop()
+		_under_construction.play()
+	if _current_level == 5:
+		_restart_level()
 	else:
 		_current_level += 1
 		_restart_level()
-	if _current_level == 4:
-		_loop.stop()
-		_under_construction.play()

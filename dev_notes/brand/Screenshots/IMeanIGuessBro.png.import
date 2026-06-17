@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgl3bllen7hod"
-path="res://.godot/imported/Plasma Games.png-7011dc2df3ed0c9ec846e9133b929ea5.ctex"
+uid="uid://tfoe5ufkevef"
+path="res://.godot/imported/IMeanIGuessBro.png-fc82fd11afdd77c4f3761d1fe12b7305.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/brand/Plasma Games.png"
-dest_files=["res://.godot/imported/Plasma Games.png-7011dc2df3ed0c9ec846e9133b929ea5.ctex"]
+source_file="res://dev_notes/brand/Screenshots/IMeanIGuessBro.png"
+dest_files=["res://.godot/imported/IMeanIGuessBro.png-fc82fd11afdd77c4f3761d1fe12b7305.ctex"]
 
 [params]
 

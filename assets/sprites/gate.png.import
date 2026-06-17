@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvpx0jqilnqkt"
-path="res://.godot/imported/Icon.png-744f55f879c6d7662280e2f9597afaa8.ctex"
+uid="uid://dbygfkktwimwa"
+path="res://.godot/imported/gate.png-a0d7fdee8dad2cf4c92779dc2ab32fef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/brand/Icons/Icon.png"
-dest_files=["res://.godot/imported/Icon.png-744f55f879c6d7662280e2f9597afaa8.ctex"]
+source_file="res://assets/sprites/gate.png"
+dest_files=["res://.godot/imported/gate.png-a0d7fdee8dad2cf4c92779dc2ab32fef.ctex"]
 
 [params]
 

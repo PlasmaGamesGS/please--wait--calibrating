@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dma8oqkb0sjxy"
-path="res://.godot/imported/Player.png-de11d0931e5713cc5b5fa7fa0508ad33.ctex"
+uid="uid://dhwnl0mexuwqc"
+path="res://.godot/imported/Plasma Games 1.0 (Logotipo principal).png-5e6462bd9c77ed22802c3928fd0e4a67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/brand/Icons/Player.png"
-dest_files=["res://.godot/imported/Player.png-de11d0931e5713cc5b5fa7fa0508ad33.ctex"]
+source_file="res://dev_notes/brand/Icons/Plasma Games 1.0 (Logotipo principal).png"
+dest_files=["res://.godot/imported/Plasma Games 1.0 (Logotipo principal).png-5e6462bd9c77ed22802c3928fd0e4a67.ctex"]
 
 [params]
 

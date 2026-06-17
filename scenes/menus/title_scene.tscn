@@ -6,7 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://visual/themes/title_screen_button_hover.tres" id="4_lqobm"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://visual/themes/title_screen_button_focus.tres" id="5_6ppm8"]
 [ext_resource type="Script" uid="uid://mpvjkup5fwmo" path="res://scripts/play.gd" id="6_bre4b"]
-[ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/menus/main_scene.tscn" id="7_ur11i"]
+[ext_resource type="PackedScene" uid="uid://cbwkgt6imvh8n" path="res://scenes/main_scene.tscn" id="7_ur11i"]
 [ext_resource type="Script" uid="uid://rkfuwdefuie3" path="res://scripts/options.gd" id="8_6ppm8"]
 [ext_resource type="AudioStream" uid="uid://bm3lrkh7op6r5" path="res://audio/music/title_theme.mp3" id="9_1ot34"]
 [ext_resource type="Script" uid="uid://da0mgfab70ah" path="res://scripts/quit.gd" id="9_lqobm"]
