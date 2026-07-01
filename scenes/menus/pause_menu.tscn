@@ -7,8 +7,7 @@
 [ext_resource type="StyleBox" uid="uid://vbhy5u6o2uho" path="res://visual/themes/title_screen_button_hover.tres" id="4_cmnsq"]
 [ext_resource type="StyleBox" uid="uid://bx68ihuqm7lyw" path="res://visual/themes/title_screen_button_focus.tres" id="5_ofnjo"]
 
-[node name="PauseMenu" type="Control"]
-visible = false
+[node name="PauseMenu" type="Control" unique_id=894294058]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_knqa7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1736266818]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -33,7 +32,7 @@ grow_vertical = 0
 scale = Vector2(0.46035993, 0.46035993)
 theme_override_constants/separation = 20
 
-[node name="Resume" type="Button" parent="VBoxContainer"]
+[node name="Resume" type="Button" parent="VBoxContainer" unique_id=1966067947]
 layout_mode = 2
 theme = ExtResource("1_88e76")
 theme_override_styles/normal = ExtResource("2_knqa7")
@@ -42,7 +41,7 @@ theme_override_styles/hover = ExtResource("4_cmnsq")
 theme_override_styles/focus = ExtResource("5_ofnjo")
 text = "Resume"
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1256877020]
 layout_mode = 2
 theme = ExtResource("1_88e76")
 theme_override_styles/normal = ExtResource("2_knqa7")
@@ -52,7 +51,7 @@ theme_override_styles/focus = ExtResource("5_ofnjo")
 text = "Title screen"
 autowrap_trim_flags = 192
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=2100742896]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -68,7 +67,7 @@ grow_vertical = 2
 scale = Vector2(0.46035993, 0.46035993)
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer2"]
+[node name="Label" type="Label" parent="VBoxContainer2" unique_id=234122174]
 layout_mode = 2
 theme = ExtResource("1_88e76")
 text = "Game Paused"

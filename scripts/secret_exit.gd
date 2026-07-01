@@ -7,6 +7,5 @@ func _ready() -> void:
 	secret_area.body_entered.connect(_secret)
 
 func _secret(_body: Node2D) -> void:
-	print("as")
 	get_parent().get_parent()._current_level = 5
 	get_parent().get_parent().next_level()

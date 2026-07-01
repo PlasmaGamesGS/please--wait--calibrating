@@ -17,7 +17,8 @@ func _ready() -> void:
 	_create_level(_current_level)
 
 	_intro.finished.connect(_loop.play)
-
+	if !_under_construction.playing:
+		_loop.finished.connect(_loop.play)
 
 func _create_level(level_number: int):
 	_instantiated_level = levels[level_number].instantiate()
@@ -41,6 +42,7 @@ func _restart_level():
 func next_level():
 	if _current_level == 4:
 		get_tree().change_scene_to_packed.call_deferred(_ending_scene)
+	if _current_level == 3:
 		_loop.stop()
 		_under_construction.play()
 	if _current_level == 5:

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxopp8pn5bwx2"
-path="res://.godot/imported/lmao.png-de61c3541757d6eb60bc832d3d5247a1.ctex"
+path="res://.godot/imported/lmao.png-7423712c2dde616a96c0178e2721c657.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dev_notes/brand/Icons/lmao.png"
-dest_files=["res://.godot/imported/lmao.png-de61c3541757d6eb60bc832d3d5247a1.ctex"]
+source_file="res://dev_notes/brand/icons/lmao.png"
+dest_files=["res://.godot/imported/lmao.png-7423712c2dde616a96c0178e2721c657.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd60frfistgnp"
-path="res://.godot/imported/player.png-98a0dcb1ee6b7c3a8c39141b0a6562ae.ctex"
+uid="uid://dhwnl0mexuwqc"
+path="res://.godot/imported/plasma_games.png-797aa7c704ded45bd90db78eb018db5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dev_notes/brand/icons/player.png"
-dest_files=["res://.godot/imported/player.png-98a0dcb1ee6b7c3a8c39141b0a6562ae.ctex"]
+source_file="res://dev_notes/brand/icons/plasma_games.png"
+dest_files=["res://.godot/imported/plasma_games.png-797aa7c704ded45bd90db78eb018db5f.ctex"]
 
 [params]
 

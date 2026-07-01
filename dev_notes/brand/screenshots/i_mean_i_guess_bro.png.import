@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tfoe5ufkevef"
-path="res://.godot/imported/IMeanIGuessBro.png-fc82fd11afdd77c4f3761d1fe12b7305.ctex"
+path="res://.godot/imported/i_mean_i_guess_bro.png-c30469803ce2483f4413d1232347691d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dev_notes/brand/Screenshots/IMeanIGuessBro.png"
-dest_files=["res://.godot/imported/IMeanIGuessBro.png-fc82fd11afdd77c4f3761d1fe12b7305.ctex"]
+source_file="res://dev_notes/brand/screenshots/i_mean_i_guess_bro.png"
+dest_files=["res://.godot/imported/i_mean_i_guess_bro.png-c30469803ce2483f4413d1232347691d.ctex"]
 
 [params]
 
